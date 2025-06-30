@@ -1,0 +1,271 @@
+
+:root {
+--fondo: #1c1f26;
+--texto-claro: #f5f5f5;
+--acento: #96c5f7;
+--acento-suave: #e2d1f9;
+--boton: #2d3748;
+}
+
+body {
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--fondo);
+color: var(--texto-claro);
+}
+
+/* HEADER */
+header {
+    background-color: #23262f;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.logo svg {
+    max-height: 60px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--texto-claro);
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li:hover > a {
+    color: var(--acento-suave);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2b2f38;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    min-width: 220px;
+    display: none;
+    z-index: 999;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 20px;
+}
+
+.submenu li a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #3c4252;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .submenu {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        display: none;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    .submenu li a {
+        padding: 8px 0;
+    }
+}
+
+
+main.reflexiones {
+padding: 3rem 1rem;
+max-width: 1200px;
+margin: 0 auto;
+font-family: 'Segoe UI', sans-serif;
+background: var(--fondo);
+color: #222;
+}
+
+main.reflexiones h1 {
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 0.5rem;
+color: #005a9c;
+}
+
+main.reflexiones .subtitulo {
+text-align: center;
+color: #e2dede;
+font-size: 1.1rem;
+margin-bottom: 3rem;
+}
+
+/* Grid layout */
+.tarjetas {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+/* Estilo para cada tarjeta */
+.tarjeta {
+background-color: #fff;
+border-radius: 16px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+padding: 2rem;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border-left: 5px solid #0077cc;
+}
+
+.tarjeta:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 24px rgba(0, 119, 204, 0.15);
+}
+
+.tarjeta p {
+margin: 0.8rem 0;
+font-size: 1rem;
+line-height: 1.6;
+color: #333;
+}
+
+.tarjeta p strong {
+color: #0077cc;
+display: inline-block;
+width: 90px;
+}
+
+
+.main-footer {
+padding: 4rem 2rem;
+background: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(6px);
+color: #fff;
+}
+
+.footer-content {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+font-size: 1.3rem;
+color: #00e5ff;
+margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section ul li a {
+font-size: 0.95rem;
+color: #ddd;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+color: #00ffff;
+padding-left: 5px;
+}
+
+.social-icons {
+margin-top: 1rem;
+display: flex;
+gap: 0.8rem;
+}
+
+.social-icons a img {
+width: 28px;
+height: 28px;
+filter: brightness(0) invert(1);
+transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+transform: scale(1.1);
+}
+
+hr {
+border: none;
+border-top: 1px solid #999;
+margin: 2rem 0;
+}
+
+.footer-bottom {
+text-align: center;
+font-size: 0.85rem;
+color: #ccc;
+}
+
+.footer-bottom a {
+color: #00e5ff;
+text-decoration: none;
+}
+
+.footer-bottom a:hover {
+text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+.bloque {
+    flex-direction: column !important;
+    text-align: center;
+}
+}

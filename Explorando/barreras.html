@@ -1,0 +1,160 @@
+<!-- BARRERAS DE LA COMUNICACIÓN -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barreras de la Comunicación</title>
+  <style>
+    :root {
+      --fondo: #1c1f26;
+      --texto-claro: #f5f5f5;
+      --acento: #96c5f7;
+      --acento-suave: #e2d1f9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto-claro);
+    }
+    header {
+      background-color: #2a2e39;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      color: var(--acento);
+      font-size: 2.8em;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: var(--acento-suave);
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 1.9em;
+    }
+    .seccion {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      align-items: center;
+      gap: 30px;
+    }
+    .texto {
+      flex: 1;
+      min-width: 280px;
+    }
+    .texto h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: var(--acento);
+    }
+    .texto p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    .imagen {
+      flex: 1;
+      min-width: 280px;
+    }
+    .imagen img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+    .volver {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: var(--acento);
+      color: #1c1f26;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .volver:hover {
+      background: var(--acento-suave);
+    }
+    @media (max-width: 768px) {
+      .seccion {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Barreras de la Comunicación</h1>
+  </header>
+  <main>
+
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/barreras1.jpg" alt="Barrera psicológica">
+      </div>
+      <div class="texto">
+        <h3>Barreras Psicológicas</h3>
+        <p>Son provocadas por las emociones, actitudes o creencias del emisor o receptor. Por ejemplo, si alguien está molesto o nervioso, puede malinterpretar lo que escucha o no prestar atención.</p>
+        <p>La empatía, la escucha activa y el autocontrol ayudan a superarlas.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Barreras Físicas</h3>
+        <p>Se producen por elementos del entorno: ruido, mala iluminación, distancia excesiva o interrupciones constantes. Estas barreras dificultan que el mensaje llegue con claridad.</p>
+        <p>Crear espacios adecuados para el diálogo es clave para evitarlas.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/barreras2.jpg" alt="Barrera física por ruido">
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/barreras3.jpeg" alt="Barrera semántica">
+      </div>
+      <div class="texto">
+        <h3>Barreras Semánticas</h3>
+        <p>Ocurren cuando se utilizan palabras, términos técnicos o jergas que el receptor no entiende. También cuando una palabra tiene diferentes significados según el contexto.</p>
+        <p>Hablar con claridad y adaptar el lenguaje al público ayuda a superarlas.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Barreras Culturales</h3>
+        <p>Se deben a diferencias de idioma, costumbres, valores o normas sociales. Lo que es apropiado en una cultura puede no serlo en otra, generando malentendidos.</p>
+        <p>El respeto y la tolerancia cultural permiten una comunicación más efectiva.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/barreras4.jpg" alt="Barrera cultural">
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/barreras5.jpg" alt="Barrera tecnológica">
+      </div>
+      <div class="texto">
+        <h3>Barreras Tecnológicas</h3>
+        <p>Aparecen cuando hay fallos en los medios digitales: mala conexión a internet, micrófonos dañados, aplicaciones difíciles de usar, etc. También si no se tiene acceso a la tecnología.</p>
+        <p>Es importante facilitar herramientas accesibles y saber usarlas correctamente.</p>
+      </div>
+    </div>
+
+    <a href="/index.html" class="volver">Volver al inicio</a>
+  </main>
+</body>
+</html>

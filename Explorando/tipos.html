@@ -1,0 +1,189 @@
+<!-- TIPOS DE COMUNICACIÓN -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipos de Comunicación</title>
+  <style>
+    :root {
+      --fondo: #1c1f26;
+      --texto-claro: #f5f5f5;
+      --acento: #96c5f7;
+      --acento-suave: #e2d1f9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto-claro);
+    }
+    header {
+      background-color: #2a2e39;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      color: var(--acento);
+      font-size: 2.8em;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: var(--acento-suave);
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 1.9em;
+    }
+    .seccion {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      align-items: center;
+      gap: 30px;
+    }
+    .texto {
+      flex: 1;
+      min-width: 280px;
+    }
+    .texto h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: var(--acento);
+    }
+    .texto p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    .imagen {
+      flex: 1;
+      min-width: 280px;
+    }
+    .imagen img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+    .volver {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: var(--acento);
+      color: #1c1f26;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .volver:hover {
+      background: var(--acento-suave);
+    }
+    @media (max-width: 768px) {
+      .seccion {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tipos de Comunicación</h1>
+  </header>
+  <main>
+
+    <h2>Según el canal</h2>
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/tipo1.1.jpg" alt="Comunicación verbal">
+      </div>
+      <div class="texto">
+        <h3>Comunicación Verbal</h3>
+        <p>Se transmite mediante el uso de palabras. Puede ser oral (hablar, conversar) o escrita (mensajes, libros, correos). Permite expresar ideas con precisión.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Comunicación No Verbal</h3>
+        <p>Se da a través del lenguaje corporal, gestos, expresiones faciales y tono de voz. Complementa o contradice la comunicación verbal.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/tipos1.png" alt="Comunicación no verbal">
+      </div>
+    </div>
+
+    <h2>Según la forma</h2>
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/tipos4.jpg" alt="Comunicación formal">
+      </div>
+      <div class="texto">
+        <h3>Comunicación Formal</h3>
+        <p>Ocurre en contextos profesionales o académicos. Tiene estructura y reglas, como reuniones, informes y entrevistas.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Comunicación Informal</h3>
+        <p>Espontánea y cotidiana, se da entre amigos o familiares. Es relajada y no sigue protocolos estrictos.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/tipos3.jpg" alt="Comunicación informal">
+      </div>
+    </div>
+
+    <h2>Según la dirección</h2>
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/tipos5.5.jpg" alt="Comunicación unidireccional">
+      </div>
+      <div class="texto">
+        <h3>Comunicación Unidireccional</h3>
+        <p>Solo va en una dirección, como un programa de televisión o un anuncio. El receptor no puede responder directamente.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Comunicación Bidireccional</h3>
+        <p>Es interactiva: emisor y receptor intercambian roles. Ejemplo: una conversación o una videollamada.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/tipos5.jpg" alt="Comunicación bidireccional">
+      </div>
+    </div>
+
+    <h2>Según el medio</h2>
+    <div class="seccion">
+      <div class="imagen">
+        <img src="/imagenes/tipos4.4.jpg" alt="Comunicación presencial">
+      </div>
+      <div class="texto">
+        <h3>Comunicación Presencial</h3>
+        <p>Se da cara a cara, en un mismo lugar físico. Permite percibir el lenguaje no verbal directamente.</p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="texto">
+        <h3>Comunicación Digital</h3>
+        <p>Ocurre a través de dispositivos como celulares o computadoras. Incluye redes sociales, correos o chats. Es útil pero puede generar malentendidos si no se usa con claridad.</p>
+      </div>
+      <div class="imagen">
+        <img src="/imagenes/tipos3.jpg" alt="Comunicación digital">
+      </div>
+    </div>
+
+    <a href="/index.html" class="volver">Volver al inicio</a>
+  </main>
+</body>
+</html>
